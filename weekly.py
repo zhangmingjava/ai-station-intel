@@ -65,8 +65,40 @@ def run() -> None:
     content += "\n---\n*要求下榜请联系我们。数据每周更新。*\n"
     path.write_text(content, encoding="utf-8")
     archive.write_text(content, encoding="utf-8")
+    _write_rss()
     print(f"周报已生成：{path}")
     print(f"周报存档：{archive}")
+
+
+def _write_rss() -> None:
+    """从 data/weekly-*.md 生成 docs/feed.xml（RSS 订阅）。"""
+    from xml.sax.saxutils import escape
+    base = "https://zhangmingjava.github.io/ai-station-intel/"
+    items = []
+    for f in sorted(OUT_DIR.glob("weekly-*.md"), reverse=True)[:10]:
+        ts = f.stem.replace("weekly-", "")
+        try:
+            import datetime
+            dt = datetime.datetime.strptime(ts, "%Y-%m-%d")
+            pub = dt.strftime("%a, %d %b %Y 08:00:00 +0800")
+        except ValueError:
+            pub = ""
+        body = escape(f.read_text(encoding="utf-8")[:2000])
+        items.append(
+            f"<item><title>AI 站点情报周报（{ts}）</title>"
+            f"<link>{base}weekly-{ts}.md</link>"
+            f"<guid>{base}weekly-{ts}.md</guid>"
+            f"<pubDate>{pub}</pubDate>"
+            f"<description>{body}</description></item>")
+    xml = ('<?xml version="1.0" encoding="UTF-8"?>'
+           '<rss version="2.0"><channel>'
+           '<title>AI 站点收款信号榜 · 周报</title>'
+           f'<link>{base}</link>'
+           '<description>每周新上榜的 AI 工具站与收款信号变化</description>'
+           '<language>zh-CN</language>'
+           + "".join(items) + "</channel></rss>")
+    (Path(__file__).parent / "docs" / "feed.xml").write_text(xml, encoding="utf-8")
+    print("RSS 已生成：docs/feed.xml")
 
 
 if __name__ == "__main__":

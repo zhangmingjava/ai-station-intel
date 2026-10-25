@@ -103,10 +103,10 @@ def import_seeds(path: str) -> int:
     return added
 
 
-def harvest_hn(days: int = 30) -> tuple[int, int]:
+def harvest_hn(days: int = 180) -> tuple[int, int]:
     """HN Algolia 公开 API：近 N 天 Show HN（免爬页面、完全合规）。"""
     url = (f"https://hn.algolia.com/api/v1/search_by_date?tags=show_hn"
-           f"&numericFilters=created_at_i>{int(time.time()) - days * 86400}&hitsPerPage=300")
+           f"&numericFilters=created_at_i>{int(time.time()) - days * 86400}&hitsPerPage=1000")
     try:
         resp = requests.get(url, timeout=TIMEOUT)
         resp.raise_for_status()
@@ -129,9 +129,11 @@ def harvest_hn(days: int = 30) -> tuple[int, int]:
     return (found, new)
 
 
-# GitHub awesome-list：raw README 直接拉，GitHub API 免 token 额度足够
-AWESOME_LISTS = [
-    "https://raw.githubusercontent.com/mahseema/awesome-ai-tools/main/README.md",
+# GitHub awesome-list：走 GitHub API 的 readme 端点（大陆网络下 raw.githubusercontent 不稳定）
+AWESOME_REPOS = [
+    "mahseema/awesome-ai-tools",
+    "e2b-dev/awesome-ai-agents",
+    "steven2358/awesome-generative-ai",
 ]
 MD_LINK_RE = re.compile(r"\((https?://[^)\s]+)\)")
 PH_GRAPHQL_URL = "https://api.producthunt.com/v2/api/graphql"
@@ -143,12 +145,15 @@ PH_QUERY = """
 def harvest_github() -> tuple[int, int]:
     found = new = 0
     conn = connect()
-    for readme_url in AWESOME_LISTS:
+    for repo in AWESOME_REPOS:
         try:
-            resp = requests.get(readme_url, timeout=TIMEOUT)
+            resp = requests.get(f"https://api.github.com/repos/{repo}/readme",
+                                headers={"Accept": "application/vnd.github.raw+json",
+                                         "User-Agent": UA},
+                                timeout=TIMEOUT)
             resp.raise_for_status()
         except requests.RequestException as e:
-            print(f"[github] {readme_url} 拉取失败: {e}")
+            print(f"[github] {repo} 拉取失败: {e}")
             continue
         for href in MD_LINK_RE.findall(resp.text):
             domain = _clean_domain(href)

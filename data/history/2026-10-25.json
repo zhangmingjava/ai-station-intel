@@ -1,0 +1,526 @@
+{
+ "jenni.ai": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "phot.ai": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "designs.ai": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "podium.com": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "letterboxd.ddns.net": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "bellweather.dev": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "aisenatus.com": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "moodwriter.app": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "codeaihq.com": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "kat-assessment.com": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "perchfocus.com": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "roush.io": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "essaypod.com": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "apps.apple.com": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "bakevideos.com": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "duoarts.com": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "kouh.me": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "sideos.ai": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "retrobrag.com": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": [
+   "stripe"
+  ]
+ },
+ "console.usetd.com": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "motorhangar.com": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "privacymeridian.org": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "openzpl.com": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "gasfree.app": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "forensicdbg.com": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "commitgarden.app": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "jakubcwirlej.com": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "hammerill.com": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "conferencefindr.com": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "reopenly.com": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "wonkygo.com": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "mxvalidation.com": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "useinstantsearch.com": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "slopsidy.com": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "drop7.dev": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "spamtherapy.com": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "weatherhubapp.com": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "aurora.shitworks.co": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "headsup.benvenutisoftware.com": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "senderwire.com": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "loudwalk.com": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": [
+   "lemonsqueezy"
+  ]
+ },
+ "turm.dev": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "gotrama.com": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "balsio.com": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "deploydrift.pittsdev.com": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": [
+   "stripe"
+  ]
+ },
+ "ancienttrees.app": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "saanora.com": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "legalnaut.com": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "flaksorama.com": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "kucedr.com": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "audimind.ai": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "swurf.org": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "grillmyprofile.com": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "impossiblemachines.xyz": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "saerskriven.com": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "marketmee.app": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": [
+   "stripe"
+  ]
+ },
+ "ainews247.org": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "moxivue.com": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "bidbouncer.com": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "installplango.com": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "plasma.ai": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "mintpage.ai": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "light-captured.wasmer.app": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "routific.com": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "kino.ai": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": [
+   "stripe"
+  ]
+ },
+ "shapcn.com": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "brevn.com": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "getforgeops.net": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "jasonwillems.com": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "milieucloud.com": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "dedoomify.com": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "klaraapps.com": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "app.trustlinden.com": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "chrispattle.com": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "explore.stokemoney.com": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "fidelic.dev": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "cotex-app.shibao.dev": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "subway.bio1up.com": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "agentitter.com": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "voicehug.co": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "wordpress.org": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "vimmymac.app": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "electronicdjmodel.com": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "aethermug.com": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "adyen.com": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "blisswriter.app": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": [
+   "paddle"
+  ]
+ },
+ "histor.modelmarket.dev": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "explain-ai.com": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "recordrelay.net": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "ego-lite.apposters.com": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": [
+   "stripe"
+  ]
+ },
+ "certavert.com": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "zegrapher.com": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "quizingo.app": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "lightscroll.app": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "hack.synteq.app": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "rootmode.ai": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "pipelang.com": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "entryleveljobs.co": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "mtarin.com": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "usenysa.com": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "nodepick.ai": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "datachef.com": {
+  "tier": "ok",
+  "revenue": 0.0,
+  "channels": []
+ }
+}

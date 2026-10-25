@@ -14,7 +14,23 @@ from db import connect, all_scanned
 from estimate import signal_tier
 
 OUT_DIR = Path(__file__).parent / "docs"
+HIST_DIR = Path(__file__).parent / "data" / "history"
 WEEK = 14 * 86400  # "新上榜"窗口
+
+
+def _previous_snapshot() -> set[str]:
+    """上一期快照中的域名集合，用于标记 🆕 新上榜。"""
+    snaps = sorted(HIST_DIR.glob("*.json"))
+    today = time.strftime("%Y-%m-%d") + ".json"
+    if not snaps or (len(snaps) == 1 and snaps[0].name == today):
+        return set()
+    latest = snaps[-1] if snaps[-1].name != today else (snaps[-2] if len(snaps) > 1 else None)
+    if not latest:
+        return set()
+    try:
+        return set(json.loads(latest.read_text(encoding="utf-8")).keys())
+    except (ValueError, OSError):
+        return set()
 
 
 def _avatar(domain: str) -> str:
@@ -76,6 +92,7 @@ def run() -> None:
     conn.close()
 
     now = time.time()
+    prev_domains = _previous_snapshot()
     parsed = []
     for r in rows:
         channels = json.loads(r["payment_channels"])
@@ -89,6 +106,7 @@ def run() -> None:
             "has_pricing": bool(r["has_pricing"]), "min_price": r["min_price_usd"],
             "revenue": r["revenue_signal"] or 0,
             "recent": (now - (r["last_scan_at"] or 0)) < WEEK,
+            "is_new": bool(prev_domains) and r["domain"] not in prev_domains,
         })
 
     parsed = [p for p in parsed if p["category"] != "非AI站点"]  # 隐藏已判定非 AI 的站点
@@ -121,7 +139,8 @@ def run() -> None:
         price = f'<div class="price">最低 ${p["min_price"]:.0f}/月</div>' if p["min_price"] else ""
         return (f'<a class="card" href="https://{html.escape(p["domain"])}" target="_blank" rel="noopener">'
                 f'<div class="card-head">{_img(p["domain"], 20)}'
-                f'<b>{html.escape(p["domain"])}</b></div>'
+                f'<b>{html.escape(p["domain"])}</b>'
+                f'{"<span class=\"new\">NEW</span>" if p["is_new"] else ""}</div>'
                 f'{f"<p>{desc}</p>" if desc else ""}'
                 f'<div class="card-foot">{_channel_badges(p["channels"], p["weak"])}{price}</div></a>')
 
@@ -137,6 +156,7 @@ def run() -> None:
         return (f'<tr {data_attrs}><td>{_img(p["domain"], 16)} '
                 f'<a href="https://{html.escape(p["domain"])}" target="_blank" rel="noopener">'
                 f'{html.escape(p["domain"])}</a>{cat}'
+                f'{"<span class=\"new\">NEW</span>" if p["is_new"] else ""}'
                 f'{"<small>" + desc + "</small>" if desc else ""}</td>'
                 f'<td>{_channel_badges(p["channels"], [])}</td>'
                 f'<td>{"✓" if p["has_pricing"] else "—"}</td>'
@@ -173,6 +193,7 @@ def run() -> None:
 <meta property="og:title" content="AI 站点收款信号榜 · 谁在悄悄赚钱">
 <meta property="og:description" content="每周自动探测 {total_in_db}+ 个 AI 工具站的收款信号与定价，独立开发者的可复制变现样本库。">
 <meta property="og:type" content="website">
+<link rel="alternate" type="application/rss+xml" title="周报 RSS" href="feed.xml">
 <style>
 :root {{ color-scheme: dark; --bg:#0a0e14; --card:#11161f; --line:#1e2633; --fg:#e6edf3; --muted:#8b949e; }}
 * {{ box-sizing:border-box; }}
@@ -214,6 +235,8 @@ h2 + .sub2 {{ color:var(--muted); margin:0 0 20px; font-size:.9rem; }}
 .ch-weak {{ opacity:.55; border-style:dashed; }}
 .tier {{ border-radius:6px; padding:2px 10px; font-size:.78rem; white-space:nowrap; }}
 .cat {{ background:#1f6feb33; color:#79b8ff; border-radius:6px; padding:1px 8px; font-size:.72rem; margin-left:8px; }}
+.new {{ color:#3fb950; border:1px solid #3fb95066; border-radius:6px; padding:0 6px;
+  font-size:.68rem; font-weight:700; margin-left:6px; vertical-align:2px; }}
 
 .market {{ display:grid; grid-template-columns:1fr 1fr; gap:14px; margin:8px 0 4px; }}
 @media (max-width:720px) {{ .market {{ grid-template-columns:1fr; }} }}
@@ -316,7 +339,8 @@ footer {{ margin-top:48px; padding-top:24px; border-top:1px solid var(--line);
 <footer>
 <div>🔦 AI 站点收款信号榜 · 数据每周自动更新</div>
 <div><a href="https://github.com/zhangmingjava/ai-station-intel">GitHub 开源</a>
- · <a href="weekly-{ts}.md">本周报告</a></div>
+ · <a href="weekly-{ts}.md">本周报告</a>
+ · <a href="feed.xml">RSS 订阅</a></div>
 </footer>
 
 <script>
