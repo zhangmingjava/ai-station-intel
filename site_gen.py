@@ -95,6 +95,19 @@ def run() -> None:
 
     strong = [p for p in parsed if p["channels"]]
     weakish = [p for p in parsed if not p["channels"] and p["weak"]]
+    # 已打标的 AI 站（无论有无信号）——分类目录素材
+    catalog = sorted([p for p in parsed if p["category"] and p["category"] != "非AI站点"],
+                     key=lambda p: (p["category"], p["domain"]))
+
+    # 市场速览：渠道占比 / 定价分布 / 平均定价
+    from collections import Counter
+    ch_counter = Counter(c for p in strong + weakish for c in p["channels"]) or Counter(
+        c for p in strong + weakish for c in p["weak"])
+    total_ch = sum(ch_counter.values()) or 1
+    priced = sorted(p["min_price"] for p in parsed if p["min_price"] > 0)
+    buckets = [("$1–9", 1, 10), ("$10–19", 10, 20), ("$20–49", 20, 50), ("$50+", 50, 10**6)]
+    price_dist = [(label, sum(1 for x in priced if lo <= x < hi)) for label, lo, hi in buckets]
+    avg_price = sum(priced) / len(priced) if priced else 0
     featured = sorted([p for p in strong + weakish if p["recent"]],
                       key=lambda p: (p["prefix"] not in ("A", "B"), -p["revenue"]))[:12]
     strong.sort(key=lambda p: (["A", "B", "C"].index(p["prefix"])
@@ -116,12 +129,15 @@ def run() -> None:
         rev = fmt_int(p["revenue"]) if p["revenue"] else "—"
         price = f'${p["min_price"]:.0f}' if p["min_price"] else "—"
         desc = html.escape((p["desc"] or p["name"] or "").strip()[:70])
-        data_attrs = (f'data-tier="{p["prefix"]}" '
+        cat = (f'<span class="cat">{html.escape(p["category"])}</span>'
+               if p["category"] else "")
+        data_attrs = (f'data-tier="{p["prefix"]}" data-cat="{html.escape(p["category"])}" '
                       f'data-ch="{" ".join(p["channels"] + p["weak"])}" '
                       f'data-text="{html.escape(p["domain"] + " " + p["desc"] + " " + p["name"]).lower()}"')
         return (f'<tr {data_attrs}><td>{_img(p["domain"], 16)} '
                 f'<a href="https://{html.escape(p["domain"])}" target="_blank" rel="noopener">'
-                f'{html.escape(p["domain"])}</a>{"<small>" + desc + "</small>" if desc else ""}</td>'
+                f'{html.escape(p["domain"])}</a>{cat}'
+                f'{"<small>" + desc + "</small>" if desc else ""}</td>'
                 f'<td>{_channel_badges(p["channels"], [])}</td>'
                 f'<td>{"✓" if p["has_pricing"] else "—"}</td>'
                 f'<td>{price}</td><td>{_tier_badge(p["tier"])}</td><td class="num">{rev}</td></tr>')
@@ -129,11 +145,34 @@ def run() -> None:
     ts = time.strftime("%Y-%m-%d")
     ch_options = "".join(f'<button class="fbtn" data-ch="{c}">{html.escape(c.capitalize())}</button>'
                          for c in CHANNEL_COLORS)
+    cats = sorted({p["category"] for p in catalog})
+    cat_buttons = "".join(f'<button class="fbtn" data-catf="{html.escape(c)}">{html.escape(c)}</button>'
+                          for c in cats)
+
+    def mbar(label: str, val: int, total: int, color: str) -> str:
+        pct = val / total * 100 if total else 0
+        return (f'<div class="mrow"><span class="lbl">{html.escape(label)}</span>'
+                f'<span class="bar" style="width:{max(pct, 1.5):.1f}%;background:{color}"></span>'
+                f'<span class="val">{val}（{pct:.0f}%）</span></div>')
+
+    ch_bars = "".join(mbar(f"{c.capitalize()}{'?' if not any(c in p['channels'] for p in strong) else ''}",
+                           n, total_ch, CHANNEL_COLORS.get(c, "#8b949e"))
+                      for c, n in ch_counter.most_common())
+    price_bars = "".join(mbar(label, n, len(priced), "#d29922") for label, n in price_dist)
+    mkt = f"""<h2>💡 市场速览</h2>
+<div class="sub2">来自当前已探测站点的小样本洞察——样本越多，结论越可靠</div>
+<div class="market">
+  <div class="mbox"><h3>💳 支付渠道分布</h3>{ch_bars or '<p style="color:var(--muted);font-size:.85rem">暂无数据</p>'}</div>
+  <div class="mbox"><h3>🏷️ 定价分布（均价 ${avg_price:.0f}/月）</h3>{price_bars or '<p style="color:var(--muted);font-size:.85rem">暂无数据</p>'}</div>
+</div>"""
     page = f"""<!DOCTYPE html>
 <html lang="zh-CN"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>AI 站点收款信号榜 · 谁在悄悄赚钱</title>
 <meta name="description" content="每周自动扫描 AI 工具站的公开收款信号（Stripe/Paddle/Creem/Dodo）与定价页，发现正在赚钱的新站点，给独立开发者找可复制的变现样本。">
+<meta property="og:title" content="AI 站点收款信号榜 · 谁在悄悄赚钱">
+<meta property="og:description" content="每周自动探测 {total_in_db}+ 个 AI 工具站的收款信号与定价，独立开发者的可复制变现样本库。">
+<meta property="og:type" content="website">
 <style>
 :root {{ color-scheme: dark; --bg:#0a0e14; --card:#11161f; --line:#1e2633; --fg:#e6edf3; --muted:#8b949e; }}
 * {{ box-sizing:border-box; }}
@@ -174,6 +213,16 @@ h2 + .sub2 {{ color:var(--muted); margin:0 0 20px; font-size:.9rem; }}
 .ch {{ border:1px solid; border-radius:20px; padding:1px 10px; font-size:.75rem; font-weight:600; }}
 .ch-weak {{ opacity:.55; border-style:dashed; }}
 .tier {{ border-radius:6px; padding:2px 10px; font-size:.78rem; white-space:nowrap; }}
+.cat {{ background:#1f6feb33; color:#79b8ff; border-radius:6px; padding:1px 8px; font-size:.72rem; margin-left:8px; }}
+
+.market {{ display:grid; grid-template-columns:1fr 1fr; gap:14px; margin:8px 0 4px; }}
+@media (max-width:720px) {{ .market {{ grid-template-columns:1fr; }} }}
+.mbox {{ background:var(--card); border:1px solid var(--line); border-radius:14px; padding:18px 20px; }}
+.mbox h3 {{ margin:0 0 12px; font-size:.95rem; color:var(--fg); }}
+.mrow {{ display:flex; align-items:center; gap:10px; margin:7px 0; font-size:.84rem; }}
+.mrow .lbl {{ width:110px; color:var(--muted); flex-shrink:0; }}
+.mrow .bar {{ height:10px; border-radius:6px; min-width:2px; }}
+.mrow .val {{ margin-left:auto; color:var(--muted); font-variant-numeric:tabular-nums; }}
 
 .filters {{ display:flex; gap:10px; flex-wrap:wrap; align-items:center; margin:18px 0 14px; }}
 #q {{ background:var(--card); border:1px solid var(--line); color:var(--fg);
@@ -219,6 +268,8 @@ footer {{ margin-top:48px; padding-top:24px; border-top:1px solid var(--line);
   <div class="stat"><b>{ts}</b><span>最近更新</span></div>
 </div>
 
+{mkt}
+
 <h2>🔥 最新发现</h2>
 <div class="sub2">近期扫描中新检测到收款信号的站点——它们可能刚开启变现，是最佳观察窗口</div>
 <div class="grid">{''.join(card(p) for p in featured) or '<p style="color:var(--muted)">本周暂无新发现，下周见。</p>'}</div>
@@ -232,6 +283,7 @@ footer {{ margin-top:48px; padding-top:24px; border-top:1px solid var(--line);
   <button class="fbtn" data-tier="B">信号强</button>
   <button class="fbtn" data-tier="C">有信号</button>
   <span style="color:var(--muted)">渠道:</span>{ch_options}
+  <span style="color:var(--muted)">分类:</span>{cat_buttons}
   <button class="clear" id="clr">重置</button>
 </div>
 <table><thead><tr>
@@ -244,6 +296,12 @@ footer {{ margin-top:48px; padding-top:24px; border-top:1px solid var(--line);
 <details><summary>👀 观察名单（仅页面提及支付渠道，尚未确认） —— {len(weakish)} 个</summary>
 <table style="margin-top:14px"><tbody>
 {''.join(table_row(p) for p in weakish) or '<tr><td>暂无</td></tr>'}
+</tbody></table></details>
+
+<details><summary>🗂️ AI 站点分类目录 —— {len(catalog)} 个</summary>
+<p style="margin:10px 0">已识别分类的 AI 站点全目录（含尚未检测到收款信号的）。分类来自 LLM 对站点首页的自动分析。</p>
+<table style="margin-top:6px"><tbody>
+{''.join(table_row(p) for p in catalog) or '<tr><td>暂无，待打标</td></tr>'}
 </tbody></table></details>
 
 <details><summary>📐 数据口径与常见问题</summary>
@@ -264,19 +322,24 @@ footer {{ margin-top:48px; padding-top:24px; border-top:1px solid var(--line);
 <script>
 const q = document.getElementById('q');
 const rows = [...document.querySelectorAll('tbody tr')];
-let tier = 'all', ch = '';
+let tier = 'all', ch = '', catf = '';
 function apply() {{
   let n = 0;
   for (const tr of rows) {{
     const okT = tier === 'all' || tr.dataset.tier === tier;
     const okC = !ch || tr.dataset.ch.split(' ').includes(ch);
+    const okF = !catf || tr.dataset.cat === catf;
     const okQ = !q.value || tr.dataset.text.includes(q.value.toLowerCase());
-    const show = okT && okC && okQ;
+    const show = okT && okC && okF && okQ;
     tr.style.display = show ? '' : 'none';
     if (show) n++;
   }}
   document.getElementById('empty').style.display = n ? 'none' : 'block';
 }}
+document.querySelectorAll('[data-catf]').forEach(b => b.onclick = () => {{
+  document.querySelectorAll('[data-catf]').forEach(x => x.classList.remove('on'));
+  b.classList.add('on'); catf = b.dataset.catf; apply();
+}});
 document.querySelectorAll('[data-tier]').forEach(b => b.onclick = () => {{
   document.querySelectorAll('[data-tier]').forEach(x => x.classList.remove('on'));
   b.classList.add('on'); tier = b.dataset.tier; apply();
@@ -286,9 +349,9 @@ document.querySelectorAll('[data-ch]').forEach(b => b.onclick = () => {{
 }});
 q.oninput = apply;
 document.getElementById('clr').onclick = () => {{
-  q.value = ''; tier = 'all'; ch = '';
+  q.value = ''; tier = 'all'; ch = ''; catf = '';
   document.querySelectorAll('[data-tier]').forEach(x => x.classList.toggle('on', x.dataset.tier === 'all'));
-  document.querySelectorAll('[data-ch]').forEach(x => x.classList.remove('on'));
+  document.querySelectorAll('[data-ch], [data-catf]').forEach(x => x.classList.remove('on'));
   apply();
 }};
 </script>
