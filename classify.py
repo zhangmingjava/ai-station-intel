@@ -20,8 +20,10 @@ def _llm_config() -> tuple[str, str, str] | None:
     key = os.environ.get("LLM_API_KEY")
     if not key:
         return None
-    base = os.environ.get("LLM_BASE_URL", "https://open.bigmodel.cn/api/paas/v4").rstrip("/")
-    model = os.environ.get("LLM_MODEL", "glm-4-flash")
+    # 默认智谱 Coding Plan 端点（与本机 .env 一致）；普通开放平台 key 去掉 /coding/ 段
+    base = os.environ.get("LLM_BASE_URL",
+                          "https://open.bigmodel.cn/api/coding/paas/v4").rstrip("/")
+    model = os.environ.get("LLM_MODEL", "glm-4.5-air")
     return key, base, model
 
 

@@ -79,8 +79,10 @@ def _write_rss() -> None:
         ts = f.stem.replace("weekly-", "")
         try:
             import datetime
-            dt = datetime.datetime.strptime(ts, "%Y-%m-%d")
-            pub = dt.strftime("%a, %d %b %Y 08:00:00 +0800")
+            from email.utils import format_datetime
+            dt = datetime.datetime.strptime(ts, "%Y-%m-%d").replace(
+                hour=8, tzinfo=datetime.timezone(datetime.timedelta(hours=8)))
+            pub = format_datetime(dt)  # RFC2822 英文格式，不受系统语言影响
         except ValueError:
             pub = ""
         body = escape(f.read_text(encoding="utf-8")[:2000])

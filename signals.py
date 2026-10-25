@@ -36,8 +36,6 @@ WEAK_PATTERNS = {
 }
 
 PRICE_RE = re.compile(r"(?:US)?\$\s?(\d{1,5}(?:\.\d{1,2})?)")
-# 排除明显不是订阅价的数字（年份、版本号等误报）
-PRICE_IGNORE = {"19", "20", "21", "22", "23", "24", "25", "26"}
 
 _last_request_time: dict[str, float] = {}
 
@@ -81,8 +79,13 @@ def _extract_min_price(html: str) -> float:
     soup = BeautifulSoup(html, "html.parser")
     for tag in soup(["script", "style", "noscript"]):
         tag.decompose()
-    prices = [float(m.group(1)) for m in PRICE_RE.finditer(soup.get_text(" ", strip=True))
-              if m.group(1) not in PRICE_IGNORE and 1 <= float(m.group(1)) <= 9999]
+    prices = []
+    for m in PRICE_RE.finditer(soup.get_text(" ", strip=True)):
+        v = float(m.group(1))
+        if 2000 <= v <= 2099:      # "$" 后跟年份的误报
+            continue
+        if 1 <= v <= 9999:
+            prices.append(v)
     return min(prices) if prices else 0.0
 
 
@@ -104,24 +107,38 @@ def scan_site(domain: str) -> ScanResult:
         found = {cid for cid, (_, pat) in CHANNEL_PATTERNS.items() if pat.search(html)}
         mentioned = {cid for cid, pat in WEAK_PATTERNS.items() if pat.search(html)}
 
-        # 首页可能不暴露支付，再探测常见定价/结账页
+        # 定价页与结账页都探测：强支付指纹常只出现在 checkout 页
         pricing_html = ""
-        for path in ("/pricing", "/price", "/plans", "/checkout", "/buy"):
+        for path in ("/pricing", "/price", "/plans"):
             if not _robots_allows(session, base, path):
                 continue
             p_resp = _polite_get(base + path, session)
             if p_resp is None:
                 continue
             if p_resp.status_code == 200 and len(p_resp.text) > 500:
-                if path in ("/pricing", "/price", "/plans"):
-                    result.has_pricing = True
+                result.has_pricing = True
                 pricing_html = p_resp.text
                 found |= {cid for cid, (_, pat) in CHANNEL_PATTERNS.items()
                           if pat.search(pricing_html)}
                 mentioned |= {cid for cid, pat in WEAK_PATTERNS.items()
                               if pat.search(pricing_html)}
-                if result.has_pricing:
-                    break
+                break
+        if not found:  # 首页/定价页已有强指纹时无需再探结账页
+            for path in ("/checkout", "/buy"):
+                if not _robots_allows(session, base, path):
+                    continue
+                p_resp = _polite_get(base + path, session)
+                if p_resp is None:
+                    continue
+                if p_resp.status_code == 200 and len(p_resp.text) > 500:
+                    found |= {cid for cid, (_, pat) in CHANNEL_PATTERNS.items()
+                              if pat.search(p_resp.text)}
+                    mentioned |= {cid for cid, pat in WEAK_PATTERNS.items()
+                                  if pat.search(p_resp.text)}
+                    if not pricing_html:
+                        pricing_html = p_resp.text
+                    if found:
+                        break
 
         if pricing_html and not result.min_price_usd:
             result.min_price_usd = _extract_min_price(pricing_html)

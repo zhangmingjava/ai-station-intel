@@ -22,7 +22,11 @@ jobs:
           DATAFORSEO_PASSWORD: ${{ secrets.DATAFORSEO_PASSWORD }}
           PH_ACCESS_TOKEN: ${{ secrets.PH_ACCESS_TOKEN }}
           LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
-        run: python pipeline.py all --limit 50
+          LLM_BASE_URL: ${{ secrets.LLM_BASE_URL }}
+          LLM_MODEL: ${{ secrets.LLM_MODEL }}
+        run: |
+          python pipeline.py all --limit 200
+          python pipeline.py classify --limit 60
       - name: 提交数据
         run: |
           git config user.name "pipeline-bot"

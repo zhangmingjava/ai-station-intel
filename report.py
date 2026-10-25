@@ -13,14 +13,19 @@ HIST_DIR = OUT_DIR / "history"
 
 def _write_snapshot() -> None:
     """每周快照：供 site_gen 对比出"新上榜"标记，也沉淀成历史曲线素材。"""
-    import json
     HIST_DIR.mkdir(exist_ok=True)
+    from estimate import signal_tier
     conn = connect()
     rows = all_scanned(conn)
     conn.close()
-    snap = {r["domain"]: {"tier": r["scan_status"], "revenue": r["revenue_signal"],
-                          "channels": json.loads(r["payment_channels"])}
-            for r in rows}
+    snap = {}
+    for r in rows:
+        channels = json.loads(r["payment_channels"])
+        weak = json.loads(r["weak_channels"] if "weak_channels" in r.keys() else "[]")
+        snap[r["domain"]] = {
+            "tier": signal_tier(channels, weak, bool(r["has_pricing"]),
+                                r["min_price_usd"]).split("（")[0],
+            "revenue": r["revenue_signal"], "channels": channels}
     ts = time.strftime("%Y-%m-%d")
     (HIST_DIR / f"{ts}.json").write_text(
         json.dumps(snap, ensure_ascii=False, indent=1), encoding="utf-8")
