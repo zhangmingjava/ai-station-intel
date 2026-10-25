@@ -3,6 +3,8 @@
 版面：Hero + 数据总览 + 本周新上榜卡片墙 + 可筛选信号表 + 观察名单（折叠）+ 方法论。
 自包含单页，无构建无依赖；数据更新后重跑覆盖。
 """
+import base64
+import colorsys
 import html
 import json
 import time
@@ -13,6 +15,25 @@ from estimate import signal_tier
 
 OUT_DIR = Path(__file__).parent / "docs"
 WEEK = 14 * 86400  # "新上榜"窗口
+
+
+def _avatar(domain: str) -> str:
+    """兜底头像：首字母 + 域名哈希配色的内联 SVG（无外部依赖，永不裂图）。"""
+    letter = (domain[0] or "?").upper()
+    h = sum(domain.encode()) % 360
+    r, g, b = (int(c * 255) for c in colorsys.hls_to_rgb(h / 360, 0.45, 0.55))
+    svg = (f'<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64">'
+           f'<rect width="64" height="64" rx="14" fill="rgb({r},{g},{b})"/>'
+           f'<text x="32" y="43" font-size="32" font-family="sans-serif" font-weight="700" '
+           f'text-anchor="middle" fill="rgba(255,255,255,.92)">{letter}</text></svg>')
+    return "data:image/svg+xml;base64," + base64.b64encode(svg.encode()).decode()
+
+
+def _img(domain: str, size: int) -> str:
+    """站点图标：优先自身 favicon.ico，加载失败退化为首字母头像（永不裂图）。"""
+    src = _avatar(domain)
+    return (f'<img src="https://{html.escape(domain)}/favicon.ico" alt="" width="{size}" '
+            f'height="{size}" onerror="this.onerror=null;this.src=\'{src}\'">')
 
 # 渠道徽标配色（品牌色近似）
 CHANNEL_COLORS = {
@@ -63,11 +84,14 @@ def run() -> None:
         prefix = tier.split("（")[0]
         parsed.append({
             "domain": r["domain"], "name": r["name"] or "", "desc": r["description"] or "",
+            "category": r["category"] or "",
             "channels": channels, "weak": weak, "tier": tier, "prefix": prefix,
             "has_pricing": bool(r["has_pricing"]), "min_price": r["min_price_usd"],
             "revenue": r["revenue_signal"] or 0,
             "recent": (now - (r["last_scan_at"] or 0)) < WEEK,
         })
+
+    parsed = [p for p in parsed if p["category"] != "非AI站点"]  # 隐藏已判定非 AI 的站点
 
     strong = [p for p in parsed if p["channels"]]
     weakish = [p for p in parsed if not p["channels"] and p["weak"]]
@@ -83,7 +107,7 @@ def run() -> None:
         desc = html.escape((p["desc"] or p["name"] or "").strip())
         price = f'<div class="price">最低 ${p["min_price"]:.0f}/月</div>' if p["min_price"] else ""
         return (f'<a class="card" href="https://{html.escape(p["domain"])}" target="_blank" rel="noopener">'
-                f'<div class="card-head"><img src="{_favicon(p["domain"])}" alt="" width="20" height="20">'
+                f'<div class="card-head">{_img(p["domain"], 20)}'
                 f'<b>{html.escape(p["domain"])}</b></div>'
                 f'{f"<p>{desc}</p>" if desc else ""}'
                 f'<div class="card-foot">{_channel_badges(p["channels"], p["weak"])}{price}</div></a>')
@@ -95,7 +119,7 @@ def run() -> None:
         data_attrs = (f'data-tier="{p["prefix"]}" '
                       f'data-ch="{" ".join(p["channels"] + p["weak"])}" '
                       f'data-text="{html.escape(p["domain"] + " " + p["desc"] + " " + p["name"]).lower()}"')
-        return (f'<tr {data_attrs}><td><img src="{_favicon(p["domain"])}" alt="" width="16" height="16"> '
+        return (f'<tr {data_attrs}><td>{_img(p["domain"], 16)} '
                 f'<a href="https://{html.escape(p["domain"])}" target="_blank" rel="noopener">'
                 f'{html.escape(p["domain"])}</a>{"<small>" + desc + "</small>" if desc else ""}</td>'
                 f'<td>{_channel_badges(p["channels"], [])}</td>'
