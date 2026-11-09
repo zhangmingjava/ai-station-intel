@@ -1,0 +1,2212 @@
+{
+ "jenni.ai": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "phot.ai": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "designs.ai": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "podium.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "letterboxd.ddns.net": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "bellweather.dev": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "aisenatus.com": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "moodwriter.app": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "codeaihq.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "kat-assessment.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "perchfocus.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "roush.io": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "essaypod.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "apps.apple.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "bakevideos.com": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "duoarts.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "kouh.me": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "sideos.ai": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "retrobrag.com": {
+  "tier": "A",
+  "revenue": 0.0,
+  "channels": [
+   "stripe"
+  ]
+ },
+ "console.usetd.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "motorhangar.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "privacymeridian.org": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "openzpl.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "gasfree.app": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "forensicdbg.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "commitgarden.app": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "jakubcwirlej.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "hammerill.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "conferencefindr.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "reopenly.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "wonkygo.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "mxvalidation.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "useinstantsearch.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "slopsidy.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "drop7.dev": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "spamtherapy.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "weatherhubapp.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "aurora.shitworks.co": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "headsup.benvenutisoftware.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "senderwire.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "loudwalk.com": {
+  "tier": "C",
+  "revenue": 0.0,
+  "channels": [
+   "lemonsqueezy"
+  ]
+ },
+ "turm.dev": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "gotrama.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "balsio.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "deploydrift.pittsdev.com": {
+  "tier": "C",
+  "revenue": 0.0,
+  "channels": [
+   "stripe"
+  ]
+ },
+ "ancienttrees.app": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "saanora.com": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "legalnaut.com": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "flaksorama.com": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "kucedr.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "audimind.ai": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "swurf.org": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "grillmyprofile.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "impossiblemachines.xyz": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "saerskriven.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "marketmee.app": {
+  "tier": "A",
+  "revenue": 0.0,
+  "channels": [
+   "stripe"
+  ]
+ },
+ "ainews247.org": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "moxivue.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "bidbouncer.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "installplango.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "plasma.ai": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "mintpage.ai": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "light-captured.wasmer.app": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "routific.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "kino.ai": {
+  "tier": "B",
+  "revenue": 0.0,
+  "channels": [
+   "stripe"
+  ]
+ },
+ "shapcn.com": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "brevn.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "getforgeops.net": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "jasonwillems.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "milieucloud.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "dedoomify.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "klaraapps.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "app.trustlinden.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "chrispattle.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "explore.stokemoney.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "fidelic.dev": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "cotex-app.shibao.dev": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "subway.bio1up.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "agentitter.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "voicehug.co": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "wordpress.org": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "vimmymac.app": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "electronicdjmodel.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "aethermug.com": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "adyen.com": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "blisswriter.app": {
+  "tier": "C",
+  "revenue": 0.0,
+  "channels": [
+   "paddle"
+  ]
+ },
+ "histor.modelmarket.dev": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "explain-ai.com": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "recordrelay.net": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "ego-lite.apposters.com": {
+  "tier": "C",
+  "revenue": 0.0,
+  "channels": [
+   "stripe"
+  ]
+ },
+ "certavert.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "zegrapher.com": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "quizingo.app": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "lightscroll.app": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "hack.synteq.app": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "rootmode.ai": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "pipelang.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "entryleveljobs.co": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "mtarin.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "usenysa.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "nodepick.ai": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "datachef.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "c0mpute.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "requstory.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "euspell.org": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "moonandmeaning.me": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "stalemap.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "bhowra.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "leanpub.com": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "getopposable.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "crayonmovie.com": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "visidea.ai": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "squidbrake.com": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "grafista.io": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "incacad.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "spinozalabs.ai": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "milepacecalculator.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "heyida.ai": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "schemawright.com": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "mcp.bonbook.co": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "paceorpause.com": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "aquariuscomputer.co": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "shivfitzpatrick.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "strategystudio.org": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "chenglou.me": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "piola.ideascollective.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "classic-ads.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "modula9.net": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "what-the-harness.polytomic.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "rocus.io": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "starter.meridian.pilot.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "hackingscreenfake.com": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "skillsync.com": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "getovercast.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "waldtier.itch.io": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "koody.com": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "worklicant.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "marketplace.visualstudio.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "longtermemory.com": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "pdfkind.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "seclai.com": {
+  "tier": "A",
+  "revenue": 0.0,
+  "channels": [
+   "stripe"
+  ]
+ },
+ "outerweb.org": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "getbeatsflow.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "agent-alley.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "standardtopic.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "patchwave.ai": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "realm.js.org": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "asktori.ai": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "pensionhunter.ai": {
+  "tier": "A",
+  "revenue": 0.0,
+  "channels": [
+   "stripe"
+  ]
+ },
+ "echosphereapp.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "creatohunt.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "launchloop.dev": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "innerwall.dev": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "obsqrity.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "markitdownai.org": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "polanyilabs.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "cliqqe.com": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "getfaro.dev": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "pianotry.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "knowyourspend.org": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "reactgrind.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "kinorogames.itch.io": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "purepdfhq.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "xyflow.com": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "deepsense.ai": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "createpiechart.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "deathplanswitch.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "extract.nerfguard.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "sendreward.com": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "xtract-production-2efc.up.railway.app": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "chai-ui.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "mediationbench.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "craig-cli.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "groupcommit.org": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "myretrotunes.com": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "maali.app": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "hello-canary.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "type.vinayakshukla.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "swirltogether.com": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "boltedapp.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "provenmetal.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "demo.ulda.io": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "forgot.dev": {
+  "tier": "A",
+  "revenue": 0.0,
+  "channels": [
+   "gumroad"
+  ]
+ },
+ "opentokenmini.org": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "villamoves.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "kairos-experiment.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "ballsoffurry.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "a5geo.org": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "indiepilot.app": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "3anddoneapp.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "packtxt.xyz": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "100toolkit.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "identity.algebrix.co": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "orionbiotechai.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "canaryguard-402.onrender.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "tailgate.latchlabs.dev": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "seliseblocks.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "stagenator-mission.web.app": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "panelfont.com": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "cirqmon.dev": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "memoryhole.app": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "johnzanussi.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "hypereffect.dev": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "infinidomino.io": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "generativespotting.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "awesomemap.dev": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "birdsaroundworld.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "ankhet.app": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "companyofcraft.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "cinetrii.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "testflight.apple.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "hedgepick.com": {
+  "tier": "C",
+  "revenue": 0.0,
+  "channels": [
+   "stripe"
+  ]
+ },
+ "wordchute.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "wispplayer.com": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "brickschat.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "ranet3.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "documemory.dev": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "meetcap.seacen.dev": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "vibecoderjournal.com": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "apiflowstudio.onrender.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "book2speech.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "chromewebstore.google.com": {
+  "tier": "C",
+  "revenue": 0.0,
+  "channels": [
+   "paypal",
+   "stripe"
+  ]
+ },
+ "local-host.ai": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "instantjsonformatter.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "moroccoapi.dev": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "apps.microsoft.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "chrystianschutz.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "halalcryptoindex.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "themesfor.app": {
+  "tier": "A",
+  "revenue": 0.0,
+  "channels": [
+   "stripe"
+  ]
+ },
+ "forgemesh.io": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "tezgrid.com": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "deepmind.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "ai.facebook.com": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "ai.meta.com": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "lmsys.org": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "bing.com": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "chatpdf.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "tiledesk.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "deepseek.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "dmwithme.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "komo.ai": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "telborg.com": {
+  "tier": "A",
+  "revenue": 0.0,
+  "channels": [
+   "paddle"
+  ]
+ },
+ "refinder.ai": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "agentset.ai": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "jasper.ai": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "compose.ai": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "rytr.me": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "wordtune.com": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "hyperwriteai.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "copy.ai": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "anyword.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "contenda.co": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "hypotenuse.ai": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "lavender.ai": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "writewithlaika.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "app.rapidtextai.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "copysmith.ai": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "yomu.ai": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "quickcreator.io": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "trolly.ai": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "pulsepost.io": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "shyeditor.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "headlinesai.pro": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "gptlocalhost.com": {
+  "tier": "B",
+  "revenue": 0.0,
+  "channels": [
+   "paddle"
+  ]
+ },
+ "chrome.google.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "workspace.google.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "sharegpt.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "chatgptwriter.ai": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "editgpt.app": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "mem.ai": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "taskade.com": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "notion.so": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "elephas.app": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "meetcosmos.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "summarywithai.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "pieces.app": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "interview.talently.ai": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "aiforgoogleslides.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "nurgo-software.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "rabbitholes.ai": {
+  "tier": "A",
+  "revenue": 0.0,
+  "channels": [
+   "stripe"
+  ]
+ },
+ "rember.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "qurate.appcradle.net": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "firmos.ai": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "getnudgeai.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "summara.io": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "marblism.com": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "spellapp.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "kosmik.app": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "minusx.ai": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "excelmatic.ai": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "x-doc.ai": {
+  "tier": "A",
+  "revenue": 0.0,
+  "channels": [
+   "stripe"
+  ]
+ },
+ "otter.ai": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "cogram.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "loopinhq.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "scribbl.co": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "genei.io": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "explainpaper.com": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "consensus.app": {
+  "tier": "B",
+  "revenue": 0.0,
+  "channels": [
+   "stripe"
+  ]
+ },
+ "sourcely.net": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "scispace.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "notebooklm.google.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "mathgptpro.com": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "inlinehelp.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "aidbase.ai": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "twig.so": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "emailtriager.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "aipoemgenerator.org": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "ollama.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "cohere.ai": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "haystack.deepset.ai": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "keploy.io": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "langchain.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "portialabs.ai": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "lmql.ai": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "llamaindex.ai": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "langfuse.com": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "predictionguard.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "status.portkey.ai": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "wordware.ai": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "coderabbit.ai": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "pagerly.io": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "hexabot.ai": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "comet.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "getcalmo.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "help.cleanlab.ai": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "docs.aws.amazon.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "codeflash.ai": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "gocodeo.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "aws.amazon.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "stenography.dev": {
+  "tier": "A",
+  "revenue": 0.0,
+  "channels": [
+   "stripe"
+  ]
+ },
+ "mintlify.com": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "ai2sql.io": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "kilocode.ai": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "capacity.so": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "runcell.dev": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "beta.dreamstudio.ai": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "artbreeder.com": {
+  "tier": "A",
+  "revenue": 0.0,
+  "channels": [
+   "stripe"
+  ]
+ },
+ "magiceraser.io": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "magicstudio.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "getalpaca.io": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "patience.ai": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "playgroundai.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "photoroom.com": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "photoguruai.com": {
+  "tier": "A",
+  "revenue": 0.0,
+  "channels": [
+   "stripe"
+  ]
+ },
+ "clipdrop.co": {
+  "tier": "A",
+  "revenue": 0.0,
+  "channels": [
+   "paddle"
+  ]
+ },
+ "stability.ai": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "rundiffusion.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "vectorart.ai": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "roomreinvented.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "republiclabs.ai": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "blackheadshots.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "aiphotoforge.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "designer.microsoft.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "svgstud.io": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "text2infographic.com": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "seede.ai": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "magicpatterns.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "libraire.ai": {
+  "tier": "C",
+  "revenue": 0.0,
+  "channels": [
+   "stripe"
+  ]
+ },
+ "rentry.org": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "stablehorde.net": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "runwayml.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "synthesia.io": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "rephrase.ai": {
+  "tier": "A",
+  "revenue": 0.0,
+  "channels": [
+   "stripe"
+  ]
+ },
+ "basedlabs.ai": {
+  "tier": "A",
+  "revenue": 0.0,
+  "channels": [
+   "stripe"
+  ]
+ },
+ "app.klingai.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "sisif.ai": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "resemble.ai": {
+  "tier": "A",
+  "revenue": 0.0,
+  "channels": [
+   "stripe"
+  ]
+ },
+ "murf.ai": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "ispeech.org": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "veritone.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "azure.microsoft.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "aiva.ai": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "beatoven.ai": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "boomy.com": {
+  "tier": "B",
+  "revenue": 0.0,
+  "channels": [
+   "paypal",
+   "stripe"
+  ]
+ },
+ "ecrettmusic.com": {
+  "tier": "C",
+  "revenue": 0.0,
+  "channels": [
+   "stripe"
+  ]
+ },
+ "loudly.com": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "soundful.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "mutinyhq.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "clearbit.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "smartly.io": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "getrupert.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "publish7.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "diallink.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "ekhos.ai": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "harmonai.org": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "taranify.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "thisimagedoesnotexist.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "scale.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "scenario.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "shotstack.io": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "fairytailai.com": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "ai-flow.net": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "architecturehelper.com": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "aiweddingtoast.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "contextdata.ai": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "getezjobs.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "getwhys.io": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "interviewsolver.com": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "easytolearn.io": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "looksmax.ai": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "podify.io": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "resumedive.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "luthor.ai": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "hyperbrowser.ai": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "thebricks.com": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "mindstudio.ai": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "searchpromptly.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "coursera.org": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "scaler.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "appliedaicourse.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "docs.omniverse.nvidia.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "e2b.dev": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "docs.e2b.dev": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "grouplens.org": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "arxiv.org": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "agentforge.net": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "agentgpt.reworkd.ai": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "raw.githubusercontent.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "docs.reworkd.ai": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "gpt3demo.com": {
+  "tier": "C",
+  "revenue": 0.0,
+  "channels": [
+   "gumroad"
+  ]
+ },
+ "agpt.co": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "news.agpt.co": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "yoheinakajima.com": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "replit.com": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "docs.xeol.io": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "camel-ai.org": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "ghli.org": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "chatarena.org": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "continue.dev": {
+  "tier": "D",
+  "revenue": 0.0,
+  "channels": []
+ },
+ "nature.com": {
+  "tier": "C-",
+  "revenue": 0.0,
+  "channels": []
+ }
+}
